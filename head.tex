@@ -1,0 +1,60 @@
+%\documentclass[12pt,russianb]{report}
+%\usepackage[russian]{babel}
+%\usepackage[cp1251]{inputenc}
+
+\documentclass{report}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{longtable}   % подключение длинных таблиц
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{indentfirst} % идентификация первых абзацев после секционирования
+\usepackage{lastpage}    % пакет достчета страниц 
+
+\usepackage{fancyhdr}                    % расширенный формат страниц
+\voffset=-25mm   % -25                   % сдвиг страницы вверх
+\hoffset=-15mm   % -10     
+
+
+  \usepackage[pdftex]{graphicx}            % загрузка графики под pdf
+  \usepackage{cmap}                        % чтоб работал поиск по PDF 
+  \usepackage[unicode, pdftex, colorlinks, linkcolor=blue]{hyperref}   % гиперссылки в PDF
+  \pdfcompresslevel=9                      % сжимаем PDF 
+  \textheight=240mm                        % для PDF высота печатного текста
+  \textwidth=165mm                         % ширина печатного текста
+  \renewcommand{\baselinestretch}{1.3}        % для PDF интервалы между
+  \baselineskip=1.3\baselineskip              % строками 
+
+
+\pagestyle{empty}
+\pagestyle{fancy}
+\lhead{\tiny ООО <<Опти-Софт>>}
+\chead{}
+\rhead{\tiny Отчет по обследованию производства \FIRMA}
+\cfoot{\rule{\textwidth}{0.25pt}
+~\arabic{page}}
+
+\sloppy                             % подавление дополнительных переносов
+\righthyphenmin=2                   % можно переносить
+\setlength{\parindent}{10mm}        % отступ красной строки
+
+\usepackage{todonotes}
+%\newcommand{\todo}[1]{}
+%\renewcommand{\todo}[1]{{\color{red} TODO: {#1}}}
+
+
+
+\usepackage{placeins}    % пакет позволяет вставлять плавающие объекты (рисунки) в том месте, 
+                         % где это необходимо. Для вывода рисунка после него встаить команду \FloatBarrier
+                         
+                         
+                         
+
+\newcommand{\red}[1]{\textcolor{Red}{#1}}
+\newcommand{\green}[1]{\textcolor{Green}{#1}}
+\newcommand{\blue}[1]{\textcolor{Blue}{#1}}                       
